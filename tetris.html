@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<style type="text/css">
+  body {overflow:hidden; background: #d7d7d7;}
+  #tetris {
+    width: 360px;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  #canvas {
+    width: 200px;
+    height: 440px;
+    background-color: #000;
+    position: relative;
+    color: #fff;
+  }
+  #canvas h1 {margin: 0; padding: 0; text-align: center; font-size: 30px; padding-top: 200px;}
+  .piece {
+    border: 1px solid white;
+    position: absolute;
+  }
+  .square {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    border: 1px solid white;
+  }
+  .type0 {background-color: #A000F0;}
+  .type1 {background-color: #00F0F0;}
+  .type2 {background-color: #F0A000;}
+  .type3 {background-color: #0000F0;}
+  .type4 {background-color: #00F000;}
+  .type5 {background-color: #F00000;}
+  .type6 {background-color: #F0F000;}
+  #next_shape {position: relative; background-color: #000; border: 1px solid white;width: 110px; height: 110px;}
+  #info {background-color: #000; color: #fff; float: right; width: 110px; height: 420px; padding: 10px;}
+</style>
+</head>
+
+<body>
+<div id="tetris">
+<!-- <div id="board" style="float: right; border: 1px solid black;">Board<br /></div> -->
+  <div id="info">
+    <div id="next_shape">asdfasdf</div>
+    <p id="level">Level: <span></span></p>
+    <p id="lines">Lines: <span></span></p>
+    <p id="score">Score: <span></span></p>
+    <p id="time">Time: <span></span></p>
+  </div>
+  <div id="canvas"></div>
+</div>
+<script type="text/javascript" src="tetris.js"></script>
+</body>
+</html>
